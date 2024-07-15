@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+    <!-- 背景 -->
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#0f0c29;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#302b63;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#24243e;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="400" height="300" fill="url(#bg-gradient)" />
+
+    <!-- 科技线条 -->
+    <g stroke="#00ffff" stroke-width="0.5" opacity="0.3">
+        <line x1="0" y1="50" x2="400" y2="50" />
+        <line x1="0" y1="100" x2="400" y2="100" />
+        <line x1="0" y1="150" x2="400" y2="150" />
+        <line x1="0" y1="200" x2="400" y2="200" />
+        <line x1="0" y1="250" x2="400" y2="250" />
+    </g>
+
+    <!-- AI核心 -->
+    <circle cx="200" cy="150" r="60" fill="none" stroke="#00ffff" stroke-width="2">
+        <animate attributeName="r" values="55;65;55" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="150" r="40" fill="#00ffff" opacity="0.3">
+        <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- AI文字 -->
+    <text x="200" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="36"
+        fill="#ffffff" font-weight="bold">AI</text>
+
+    <!-- 数据流 -->
+    <g stroke="#ff00ff" stroke-width="2" opacity="0.6">
+        <path d="M140,150 Q120,100 160,50">
+            <animate attributeName="d"
+                values="M140,150 Q120,100 160,50;M140,150 Q160,100 120,50;M140,150 Q120,100 160,50"
+                dur="3s" repeatCount="indefinite" />
+        </path>
+        <path d="M260,150 Q280,200 240,250">
+            <animate attributeName="d"
+                values="M260,150 Q280,200 240,250;M260,150 Q240,200 280,250;M260,150 Q280,200 240,250"
+                dur="3s" repeatCount="indefinite" />
+        </path>
+    </g>
+
+    <!-- 代码符号 -->
+    <g font-family="monospace" font-size="16" fill="#00ff00">
+        <text x="60" y="80">&lt;HTML&gt;</text>
+        <text x="60" y="220">JavaScript</text>
+        <text x="320" y="80">React</text>
+        <text x="320" y="220">Vue.js</text>
+        <text x="200" y="270" text-anchor="middle">UI</text>
+    </g>
+
+    <!-- 连接线 -->
+    <g stroke="#ffff00" stroke-width="1" stroke-dasharray="5,5">
+        <line x1="80" y1="80" x2="180" y2="150">
+            <animate attributeName="stroke-dashoffset" values="10;0" dur="1s"
+                repeatCount="indefinite" />
+        </line>
+        <line x1="80" y1="220" x2="180" y2="150">
+            <animate attributeName="stroke-dashoffset" values="10;0" dur="1s"
+                repeatCount="indefinite" />
+        </line>
+        <line x1="320" y1="80" x2="220" y2="150">
+            <animate attributeName="stroke-dashoffset" values="10;0" dur="1s"
+                repeatCount="indefinite" />
+        </line>
+        <line x1="320" y1="220" x2="220" y2="150">
+            <animate attributeName="stroke-dashoffset" values="10;0" dur="1s"
+                repeatCount="indefinite" />
+        </line>
+        <line x1="200" y1="270" x2="200" y2="190">
+            <animate attributeName="stroke-dashoffset" values="10;0" dur="1s"
+                repeatCount="indefinite" />
+        </line>
+    </g>
+</svg>

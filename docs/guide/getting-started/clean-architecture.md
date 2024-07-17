@@ -4,7 +4,7 @@
 
 上次提到，AI 赋能的重点会围绕：从 0 ～ 1 开发业务组件这个步骤。
 
-![](http://qiniu.xmn-lv.cn/20240429071846.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429071846.png)
 
 这个步骤的内容有点多，为了让内容更具有结构性，便于读者理解，也将会拆成一些个小节来说。
 
@@ -28,7 +28,7 @@ Clean Code —— 干净的代码。
 
 先来看一段代码，这种类型的代码大部分的前端同学可能都不陌生。
 
-![](http://qiniu.xmn-lv.cn/20240420215549.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240420215549.png)
 
 - 使用 mobx 或者 redux 来管理所有的数据状态，包括服务端状态（请求 api 拿到的数据状态）和前端状态（组件的 loading、visible 等）。
 
@@ -44,11 +44,11 @@ Clean Code —— 干净的代码。
 
 规范前端页面开发的工作流：业务组件开发 -> 数据对接联调。
 
-![](http://qiniu.xmn-lv.cn/20240428083634.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240428083634.png)
 
 其中包含一个最基本的原则：`服务端状态和前端状态分离`
 
-![](http://qiniu.xmn-lv.cn/20240429062204.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429062204.png)
 
 - 所有业务组件均可独立运行
 
@@ -93,7 +93,7 @@ StorybookExample // 业务组件名称
 
 - 通过 storybook 管理所有业务组件。
 
-![](http://qiniu.xmn-lv.cn/20240429063554.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429063554.png)
 
 好处：1、基于 storybook 运行环境，能快速进行业务组件的开发；2、便于业务组件的统一管理维护，基于 storybook 示例文档，新人可以快速熟悉业务组件；
 
@@ -101,7 +101,7 @@ StorybookExample // 业务组件名称
 
 基于整个设计稿页面，按照模块的 `独立性` 和 `可复用性` 来拆分业务组件。
 
-![](http://qiniu.xmn-lv.cn/20240429064903.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429064903.png)
 
 `3、定义 业务组件的 props`
 

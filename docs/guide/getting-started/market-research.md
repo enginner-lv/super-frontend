@@ -4,6 +4,8 @@
 
 唯有真正能脚踏实地，通过 AI 赋能实际工作流中，才是牛逼。
 
+从本篇章开始，我们一起来`探索与入门` AI 在前端研发领域的应用。
+
 ## 市场现状
 
 先说结论，从我下场实践，以及目前了解到的前端 AI 现状来看：
@@ -16,13 +18,13 @@
 
 - 直接生成整个网站，如 Dora，主打生成官网
 
-![](http://qiniu.xmn-lv.cn/20240328073237.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240328073237.png)
 
 详见：<https://www.dora.run/>
 
 - Vercel V0，生成 React 组件
 
-![](http://qiniu.xmn-lv.cn/20240328073346.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240328073346.png)
 
 详见：<https://v0.dev/>
 
@@ -30,7 +32,7 @@
 
 - ScreenShotToCode，截图转换为页面，包括 html，react 等代码，Star 高的离谱。
 
-![](http://qiniu.xmn-lv.cn/20240328074249.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240328074249.png)
 
 详见：<https://github.com/abi/screenshot-to-code>
 
@@ -42,7 +44,7 @@
 
 - GitHub Copilot，Github 做的辅助编程工具，十分推荐，官方也十分有自信，从 slogan 可以看出：The world’s most widely adopted AI developer tool.（世界上使用最广泛的 AI 开发工具）
 
-![](http://qiniu.xmn-lv.cn/20240328075147.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240328075147.png)
 
 详见：<https://github.com/features/copilot>
 
@@ -82,7 +84,7 @@
 
 笔者总结了一个 AI 赋能工作流的模型---金字塔模型，AI 赋能前端同样也适用。
 
-![](http://qiniu.xmn-lv.cn/20240324201241.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240324201241.png)
 
 如上图，当做一件复杂的事情时，我们会拆分成各个环节，每个环节或许还能拆分为多个步骤。
 
@@ -108,7 +110,7 @@ AI 赋能同样如此，总结起来：基于一个规范工作流，拆分为�
 
 AI 赋能的金字塔如下：
 
-![](http://qiniu.xmn-lv.cn/20240324205908.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240324205908.png)
 
 共分为 2 个环节，4 个步骤
 

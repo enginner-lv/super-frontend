@@ -120,7 +120,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           // collapsed: false,
           items: [
             {
-              text: "产品定位、五大功能、两大核心能力",
+              text: "产品源起、定位、5大功能、2大核心能力",
               link: "/product-features",
             },
             {

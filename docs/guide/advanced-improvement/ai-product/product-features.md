@@ -2,7 +2,13 @@
 
 从本篇开始，我们开始进入`《AI 赋能前端研发从 0 ～ 1》`小册的`进阶提升`系列。
 
-作为这个系列的开篇，我想跟大家分享一款自研的 AI 产品 --- [LV0](http://lv0.chat)，这款产品也是我在探索 AI 赋能前端研发的过程中，一些想法的实践和落地。
+作为这个系列的开篇，我想先分享一款自研的 AI 产品 --- [LV0](http://lv0.chat)，因为这款产品也是我在探索 AI 赋能前端研发的过程中，一些想法的实践和落地。
+
+:::tip PS
+如果放在 [AI 赋能前端金字塔](/guide/preface/core-theory)体系中，LV0 目前阶段主要定位在`业务组件`的研发环节。👇
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722151841.png)
+:::
 
 ## 产品源起
 
@@ -64,37 +70,61 @@ LV0 的 5 大功能融合了现有市面上同类产品的各大优势，同时�
 
 `功能 1：自然语言生成代码。`
 
-通过一段大白话描述你的需求，即可产出符合你需求的前端代码出来，相当改变了我们现有的一个开发模式，我把这种方式叫做“聊天式编程”。
+通过一段大白话描述你的需求，即可产出符合你需求的前端代码出来，相当改变了我们现有的一个开发模式，我把这种方式叫做“聊天式编程”。👇
 
-![]()
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722090114.png)
 
-LV0 中还提供了一个 Copilot，你可以直接和 Copilot 对话，Copilot 会实时给你提供建议，辅助你更好地描述自己的想法，最终汇总整个对话生成代码。
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722090155.png)
 
-![]()
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722090255.png)
+
+LV0 中还提供了一个 Copilot，你可以直接和 Copilot 对话，Copilot 会实时给你提供建议，辅助你更好地描述自己的想法，最终汇总整个对话生成代码。👇
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722090730.png)
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722090810.png)
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722090917.png)
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722090934.png)
+
+Copilot 汇总整个的聊天记录，开始生成代码。👇
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722091028.png)
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722091210.png)
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722092733.png)
 
 `功能 2：截图生成代码`
 
-得益于 LLM 的多模态识图能力，如果针对需求你有可以参考的设计图，那可以通过 LV0 将设计图转换为前端代码。
+得益于 LLM 的多模态识图能力，如果针对需求你有可以参考的设计图，那可以通过 LV0 将设计图转换为前端代码。 👇
 
-![]()
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722094130.png)
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722094204.png)
 
 `功能 3：原型设计生成代码`
 
 同样得益于 LLM 的多模态识图能力，如果你比较擅长通过图形来表达自己的想法，那可以把你的需求画一个草图，LV0 可以将你的草图转换为前端代码。
 
-![]()
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722102029.png)
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722102048.png)
 
 `功能 4：代码持续迭代`
 
-在 LV0 中生成的所有代码都有版本记录，你可以回溯到任意一次 AI 生成的代码，基于当前版本的代码进行持续迭代生成。
+在 LV0 中生成的所有代码都有版本记录，你可以回溯到任意一次 AI 生成的代码，基于当前版本的代码进行持续迭代生成。👇
 
-![]()
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722102403.png)
+
+如上例子，持续迭代 4 次，最终符合期望的需求。
 
 `功能 5：在线微调`
 
-由于编程这件事情的容错率比较低，加上现阶段的大模型是具有迷惑性的，所以有些时候，仅仅通过自然语言，可能也无法达到预期的代码质量，因此我们提供了 IDE 代码在线微调，用来提升代码的可控性。
+由于编程这件事情的容错率比较低，加上现阶段的大模型是具有迷惑性的，所以有些时候，仅仅通过自然语言，可能也无法达到预期的代码质量，因此 LV0 中提供了 IDE 代码在线微调，用来提升代码的可控性。
 
-![]()
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722102641.png)
 
 ## 2 大核心优势
 
@@ -102,13 +132,15 @@ LV0 中还提供了一个 Copilot，你可以直接和 Copilot 对话，Copilot 
 
 不同的公司有不同业务需求和代码规范，就算没有自己来研发私有基础组件库，一般也会基于一些开源组件库来进行二次封装，然而大模型并不知道你所封装的基础组件，因此 LV0 的一个核心功能之一就是支持 AI 可以基于公司私有组件库生成代码。
 
-![]()
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722102841.png)
 
 `优势 2：开放核心api能力`
 
-LV0 的核心能力是基于任意开源或私有组件来生成代码，我们也开放了核心 API 的能力，你可以基于 LV0 的核心能力来接入自己的研发工作流中，比如：接入到自己的 IDE 中，直接在 IDE 中沉浸式生成代码。
+LV0 的核心能力是`基于任意开源或私有组件来生成代码`，我们也开放了整个核心 API 的能力，你可以将 LV0 开放的核心 API 接入自己的研发工作流中。
 
-![]()
+比如：接入到自己的 IDE 中，直接在 IDE 中沉浸式生成代码。👇
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240722103211.png)
 
 ---
 

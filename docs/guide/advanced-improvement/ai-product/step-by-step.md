@@ -36,7 +36,7 @@
 
 `循序渐进式`的整个过程就是：人工不断挑毛病，让 AI 不断修复的过程。
 
-`prompt1：`
+**prompt1：**
 
 `（截图一张组件的图）生成组件的props`
 
@@ -46,7 +46,7 @@
 
 ![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240606074720.png)
 
-`prompt2：`
+**prompt2：**
 
 `1、当编辑的时候需要把原始的数据填充到输入框中 2、编辑状态下，操作列中需要包含“删除”按钮 3、左上角的“添加一行数据”按钮在表格的最下面（如图所示）`
 
@@ -54,13 +54,13 @@
 
 ![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240606075045.png)
 
-`prompt3：`
+**prompt3：**
 
 `新添加出来的一行数据，每个输入框都是空的，且操作列不包含删除按钮，点击取消的时候就是删除新加的这一行`
 
 ![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240606215821.png)
 
-`prompt4：`
+**prompt4：**
 
 `“添加一行数据”请使用图片中所示的样式`
 
@@ -78,7 +78,7 @@
 可参考：[整洁的业务组件架构](/guide/getting-started/clean-architecture)
 :::
 
-`prompt5：`
+**prompt5：**
 
 `在保证原有功能的基础上，帮我抽离一下props，data：展示列表数据；onNew：添加一行数据；onEdit：编辑数据；onDelete：删除数据`
 

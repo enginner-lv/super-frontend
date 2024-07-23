@@ -8,19 +8,19 @@
 
 总结起来 4 步走：
 
-`1、定义角色`
+### 1、定义角色
 
 ![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429072654.png)
 
-`2、投喂基础 UI 组件数据`
+### 2、投喂基础 UI 组件数据
 
 ![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429072719.png)
 
-`3、描述业务组件的基本信息，开始生成代码`
+### 3、描述业务组件的基本信息，开始生成代码
 
 ![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429072734.png)
 
-`4、迭代优化`
+### 4、迭代优化
 
 ![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240429072750.png)
 

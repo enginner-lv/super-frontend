@@ -185,27 +185,27 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           items: [
             {
               text: "Github Copilot",
-              // link: "/advanced-improvement/integration-ide/github-copilot",
-              base: "/guide/advanced-improvement/integration-ide/github-copilot",
+              base: "/guide/advanced-improvement/integration-ide",
+              link: "/github-copilot",
               // collapsed: false,
-              items: [
-                {
-                  text: "产品定位",
-                  link: "/product-positioning",
-                },
-                {
-                  text: "通用技能",
-                  link: "/general-skills",
-                },
-                {
-                  text: "组合神技",
-                  link: "/combo-techniques",
-                },
-                {
-                  text: "最佳实践案例",
-                  link: "/best-practices",
-                },
-              ],
+              // items: [
+              //   {
+              //     text: "产品定位",
+              //     link: "/product-positioning",
+              //   },
+              //   {
+              //     text: "通用技能",
+              //     link: "/general-skills",
+              //   },
+              //   {
+              //     text: "组合神技",
+              //     link: "/combo-techniques",
+              //   },
+              //   {
+              //     text: "最佳实践案例",
+              //     link: "/best-practices",
+              //   },
+              // ],
             },
             {
               text: "自定义 Copilot",

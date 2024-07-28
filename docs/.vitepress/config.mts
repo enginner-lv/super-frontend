@@ -21,6 +21,7 @@ export default defineConfig({
     },
 
     footer: {
+      message: `<a target="_blank" href="https://beian.miit.gov.cn">湘 ICP 备 2024075253 号</a>`,
       copyright: `版权所有 © 2024-${new Date().getFullYear()} lv`,
     },
 

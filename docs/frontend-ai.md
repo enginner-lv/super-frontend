@@ -263,9 +263,7 @@ ps：如下用的`结构化提示词`
 
 `2大优势`：1.基于任意开源或者私有组件库生成代码、2.开放核心 API 能力，快速接入工作流。
 
-`循序渐进式生成代码`：
-
-`聊天式生成代码`：
+`最佳实践案例`：[1. 循序渐进式生成代码](/guide/advanced-improvement/ai-product/step-by-step)、[2. 聊天式生成代码](/guide/advanced-improvement/ai-product/chat-style)
 
 ---
 
@@ -279,11 +277,11 @@ ps：如下用的`结构化提示词`
 
 基于这个核心，有三种解决方案：
 
-`方案一`：RAG（检索增强生成）
+`方案一`：RAG：`Retrieval`（检索）- `Augmented`（增强）- `Generation`（生成）
+
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240728113808.png)
 
 RAG 技术原理简单来说：从大模型外的知识库（如私有的向量数据库、联网的实时数据等）中检索与查询相关的信息，然后结合这些信息以及原始查询，一起给到大语言模型，从而生成包含专业领域（大模型外的知识）的内容。
-
-![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240430162333.png)
 
 从上图标注的重点可以知道，大部分的这种问题可以通过 RAG 技术解决。
 
@@ -315,6 +313,8 @@ RAG 技术原理简单来说：从大模型外的知识库（如私有的向量�
 
 3、`自定义Agent打造高质量的RAG`
 
+案例：LV0 中基于基于私有组件生成代码的 Agent。
+
 ## 集成 AI 到 IDE，打造沉浸式编码工作流
 
 在前面的内容，我们发现重点是`从 0 ～ 1 开发业务组件`，因为它占据了整个研发流程中`80%`左右的时间。
@@ -325,20 +325,108 @@ RAG 技术原理简单来说：从大模型外的知识库（如私有的向量�
 
 ### Github Copilot
 
-`产品定位`：
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240728124223.png)
 
-`通用技能`：
+`产品定位`：GitHub Copilot 是一个集成在 IDE 中的 AI `编程助理`，通过自动补全和建议代码来提升开发效率。
+
+`通用技能`：代码补全、代码建议、bug 修复、基于上下文的 chatbot 等。
 
 `组合神技`：
 
+- 注释 + Tab 工作流
+
+- 跨文件上下文的理解
+
+- 基于物料文件的迭代开发
+
 `实践案例`：
+
+- Graphql Mutation、Selector 的编写
+
+- 业务组件的迭代
+
+如上 Github Copilot 确实挺不错的，但是我在实际使用的过程中使用最多的仅仅是它的`实时补全`功能，其他功能用的并不多。
+
+为什么呢？
+
+因为我想要一个更强大的 Copilot，一个能够结合业务、深入场景来**客制化自定义**的 Copilot。
+
+比如能够调度任意 LLM Model、选择任意上下文代码、封装任意 prompt 命令、甚至自定义 Agent 工作流的 Copilot。
+
+下面，开始介绍 Continue，玩转自定义 Copilot。
 
 ### 自定义 Copilot
 
 **Continue --- 自定义 Copilot 神器**
 
-**自定义 Command**
+`一句话介绍`： Continue enables you to create your own AI code assistant inside your IDE. Keep your developers in flow with open-source VS Code and JetBrains extensions that can be connected to any model, any context, and anything else you need.（Continue 使您能够在 IDE 中创建自己的 AI 代码助手。使用可以连接到任何模型、任何上下文和任何其他您需要的内容的开源 VS Code 和 JetBrains 扩展）
 
-**自定义 Context**
+**基本功能**
+
+1. 快速理解代码段
+2. 自动补全代码建议
+3. 重构函数
+4. 向代码库提问
+5. 快速使用文档作为上下文
+6. 使用斜杠命令执行操作
+7. 将类、文件等添加到上下文
+8. 立即理解终端错误
+
+详见：<https://docs.continue.dev/how-to-use-continue>
+
+**Coding 时，用最好的 LLM 沉浸式查阅资料**
+
+![](http://qiniu.xmn-lv.cn/20240607100544.png)
+
+**调度任意 LLM Model**
+
+![](http://qiniu.xmn-lv.cn/20240618085630.png)
+
+**选择任意上下文**
+
+可以选择任意上下文代码，比如选择任意文件、任意函数、任意类。
+
+跟 GitHub Copilot 不同，Continue 能够直观地感受到你所选择的上下文。
+
+**自定义任意命令**
+
+通过自定义命令，可以将一些常用的操作，抽象封装为快捷的命令，方便使用。
+
+![](http://qiniu.xmn-lv.cn/20240618093331.png)
+
+如上，你可以通过斜杠命令，来执行一些自定义的操作，比如：share、cmd、commit 等。如下图：
+
+![](http://qiniu.xmn-lv.cn/20240618093552.png)
+
+详见：<https://docs.continue.dev/customization/slash-commands>
+
+**自定义任意 Context Providers**
+
+Context Providers，故名思义，就是提供上下文的服务。
+
+![](http://qiniu.xmn-lv.cn/20240618101428.png)
+
+如上，你可以通过 @ 操作符，来选择任意的 Context Providers 来提供不同的上下文。
 
 **自定义 Agent**
+
+Agent：代理、智能体。
+
+简单理解：能够代替你处理某个场景下某个问题的智能 AI 应用。
+
+在 Continue 中，我们可以通过 Model Provider 来接入你的 Agent。
+
+在`~/.continue/config.json`文件中，添加如下配置：
+
+```json
+{
+  "models": [
+    {
+      "title": "Mui Business Component Agent",
+      "provider": "openai", // 这里选择 OpenAI 的原因是，我们的 Agent 接口返回的流数据格式与 OpenAI 的格式一致
+      "model": "gpt-4o", // 可以任意选择一个 OpenAI系列 Model 均可，仅为了适配 Continue 的数据格式
+      "apiBase": "http://localhost:3000/api/v1" // 重点：这里填写我们的 Agent 接口地址
+    }
+  ]
+}
+```

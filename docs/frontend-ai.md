@@ -376,11 +376,11 @@ RAG 技术原理简单来说：从大模型外的知识库（如私有的向量�
 
 **Coding 时，用最好的 LLM 沉浸式查阅资料**
 
-![](http://qiniu.xmn-lv.cn/20240607100544.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240607100544.png)
 
 **调度任意 LLM Model**
 
-![](http://qiniu.xmn-lv.cn/20240618085630.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240618085630.png)
 
 **选择任意上下文**
 
@@ -392,11 +392,11 @@ RAG 技术原理简单来说：从大模型外的知识库（如私有的向量�
 
 通过自定义命令，可以将一些常用的操作，抽象封装为快捷的命令，方便使用。
 
-![](http://qiniu.xmn-lv.cn/20240618093331.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240618093331.png)
 
 如上，你可以通过斜杠命令，来执行一些自定义的操作，比如：share、cmd、commit 等。如下图：
 
-![](http://qiniu.xmn-lv.cn/20240618093552.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240618093552.png)
 
 详见：<https://docs.continue.dev/customization/slash-commands>
 
@@ -404,7 +404,7 @@ RAG 技术原理简单来说：从大模型外的知识库（如私有的向量�
 
 Context Providers，故名思义，就是提供上下文的服务。
 
-![](http://qiniu.xmn-lv.cn/20240618101428.png)
+![](https://lvjishupai.oss-cn-beijing.aliyuncs.com/20240618101428.png)
 
 如上，你可以通过 @ 操作符，来选择任意的 Context Providers 来提供不同的上下文。
 

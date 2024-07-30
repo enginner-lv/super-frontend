@@ -16,7 +16,8 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+      pattern:
+        "https://github.com/enginner-lv/super-frontend/edit/main/docs/:path",
       text: "为该文档提供修改建议",
     },
 
@@ -50,8 +51,10 @@ export default defineConfig({
     darkModeSwitchTitle: "切换到深色模式",
 
     socialLinks: [
-      // TODO:
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      {
+        icon: "github",
+        link: "https://github.com/enginner-lv/super-frontend",
+      },
     ],
   },
 });

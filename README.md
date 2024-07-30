@@ -2,7 +2,7 @@
 
 体系化整理自 AI 爆发以来，将 AI 融入前端研发工作流的探索历程。
 
-[点击开始阅读手册](https://github.com)
+[点击开始阅读手册](https://ai.iamlv.cn)
 
 希望能够探索出 AI 时代下，适用于部分前端的转型（超级个体）之路。
 
@@ -12,7 +12,7 @@
 
 ![](docs/public/public-account.png)
 
-交个朋友，一起探索成长～
+加微信：lvjishupai，交个朋友，一起探索成长～
 
 ![](docs/public/wechat.png)
 
